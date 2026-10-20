@@ -1,33 +1,40 @@
-﻿⚡ Portal Educacional 
- — Resistores e a Lei de OhmRepositório oficial do módulo educativo sobre Resistores, 1ª e 2ª Leis de Ohm, Efeito Joule e Código de Cores, desenvolvido para a disciplina de Eletrônica / Eletrotecnia.
- 
- 👥 Identificação do ProjetoNome do Projeto: Portal Educacional de EletroeletrônicaMódulo Base: Resistores e a Lei de OhmNome da Dupla: Equipe Ohm TechIntegrantes:Integrante 1: [Nome do Aluno 1] — Desenvolvimento HTML/JS e Pesquisa TeóricaIntegrante 2: [Nome do Aluno 2] — Estilização CSS, Identidade Visual e DocumentaçãoRepositório GitHub: https://github.com/dupla/portal-educativo
- 
- 🎨 Identidade Visual (Design System)Tabela de padronização visual utilizada no layout do portal:Elemento VisualEspecificação / Código HexadecimalCor Primária (Header e Menus)#0F2A4A (Azul Escuro Profundo)Cor Secundária (Botões e Links)#00A8E8 (Ciano Elétrico)Cor de Fundo da Página#F4F6F9 (Cinza Claro Neutro)Cor dos Textos#1D2A3A (Grafite Escuro)Fonte dos TítulosRoboto, sans-serifFonte do Texto PrincipalOpen Sans, sans-serifLogotipoSímbolo de circuito com </> e o nome "EletroPortal"
- 
- 📚 Conteúdo Abordado no MóduloA página do módulo (pages/resistores-lei-de-ohm.html) contém as seguintes seções educativas:Introdução: Importância dos resistores na limitação de corrente e proteção de circuitos.Fundamentação Teórica:Conceito de Resistência Elétrica e unidade em Ohms ($\Omega$).1ª Lei de Ohm: $V = I \times R$2ª Lei de Ohm: $R = \rho \frac{L}{A}$Potência Elétrica e Efeito Joule: $P = V \times I$Tabela de Código de Cores: Leitura de resistores de 4 e 5 faixas.Exemplos Práticos: Dimensionamento de resistor para LED e funcionamento do chuveiro elétrico.Curiosidades: Funcionamento de sensores LDR, NTC/PTC e Supercondutividade.Resumo para Caderno: Tabela e fórmulas de rápida fixação para os alunos.Quiz Interativo: Questões de múltipla escolha com validação instantânea.
- 
- 
- 📁 Estrutura de Pastas do Repositórioportal-educativo/
-├── index.html                  # Página principal do portal
-├── pages/
-│   └── resistores-lei-de-ohm.html # Página em HTML com o conteúdo da pesquisa
+# ⚡ Portal Educacional de Eletroeletrônica — Resistores e a Lei de Ohm
+
+> Projeto de software educacional colaborativo desenvolvido para a disciplina de Eletroeletrônica.
+
+---
+
+## 📌 Sobre o Projeto
+
+O **Portal Educacional de Eletroeletrônica** é uma plataforma desenvolvida para centralizar conteúdos informativos e interativos sobre fundamentos da elétrica e eletrônica. Cada dupla ficou responsável por desenvolver um módulo específico. Este repositório contém a aplicação e a página dedicada ao tema **Resistores e a Lei de Ohm**.
+
+---
+
+## 🎨 Identidade Visual (Design System)
+
+O projeto utiliza a arquitetura visual e as especificações de estilo oficiais da disciplina:
+
+| Elemento Visual | Especificação / Valor |
+| :--- | :--- |
+| **Cor Primária** | `#1769aa` (Azul Tech) |
+| **Cor Secundária** | `#475569` (Cinza Escuro) |
+| **Cor de Destaque / Acento** | `#0f766e` (Verde Petróleo) |
+| **Fundo da Página** | `#f5f7fb` (Cinza Claro) |
+| **Superfície / Cartões** | `#ffffff` (Branco) |
+| **Tipografia Base** | `system-ui`, `-apple-system`, `sans-serif` |
+| **Logotipo** | `</> EletroPortal` |
+
+---
+
+## 📂 Estrutura de Arquivos
+
+```text
+projeto-endrew/
 ├── css/
-│   ├── style.css              # Estilos globais (Header, Sidebar, Footer)
-│   └── content.css            # Estilos do conteúdo técnico e do Quiz
+│   └── style.css            # Estilos CSS oficiais do professor
 ├── js/
-│   ├── main.js                # Lógica de busca e navegação
-│   └── quiz.js                # Lógica interativa do Quiz
+│   └── quiz.js              # Lógica de validação do Quiz e interatividade
 ├── assets/
-│   ├── images/                # Diagramas, esquemas e fotos de componentes
-│   └── icons/                 # Ícones em formato SVG
-├── docs/
-│   └── pesquisa-teorica.txt   # Arquivo de rascunho/anotações teóricas (opcional)
-└── README.md                  # Documentação principal do repositório
-
-🛠️ Tecnologias UtilizadasTecnologiaFinalidadeHTML5Estruturação semântica e acessível da páginaCSS3Layout responsivo (Flexbox/Grid) e aplicação da Identidade VisualJavaScript (ES6+)Interatividade do Quiz e manipulação do DOMGit & GitHubControle de versão e hospedagem do código
-🚀 Como Executar o Projeto LocalmenteClonar o repositório:git clone https://github.com/dupla/portal-educativo.git
-Entrar na pasta do projeto:cd portal-educativo
-
-Abrir a aplicação:Clique duas vezes no arquivo index.html ou abra pages/resistores-lei-de-ohm.html diretamente em seu navegador web (Chrome, Firefox, Edge).
-📄 Referências e CréditosImagens e Ilustrações: Unsplash, Pexels e Wikimedia Commons (Licenças Livres).Livros Base:SADIKU, Matthew N. O.; ALEXANDER, Charles K. Fundamentos de Circuitos Elétricos. 6. ed.BOYLESTAD, Robert L. Introdução à Análise de Circuitos. 12. ed.
+│   └── images/              # Recursos visuais, diagramas e imagens
+├── index.html               # Portal completo (Header, Sidebar, Content e Footer)
+└── README.md                # Documentação e instruções do projeto
