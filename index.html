@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Educacional de Eletroeletrônica</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page">
+        <header class="site-header">
+            <div class="container header-inner">
+                <a href="index.html" class="site-logo">&lt;/&gt; EletroPortal</a>
+                
+                <nav class="site-nav" aria-label="Navegação Principal">
+                    <a href="index.html" aria-current="page">Início</a>
+                    <a href="#conteudo-principal">Módulos</a>
+                    <a href="#sobre-portal">Sobre</a>
+                </nav>
+
+                <div class="cluster">
+                    <input type="text" id="portal-search" class="form-control" style="width: 170px;" placeholder="Buscar no portal...">
+                    <a href="#" class="button button-secondary">Entrar</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content" id="conteudo-principal">
+            <div class="container">
+                <div class="grid">
+
+                    <!-- MENU LATERAL DA ESQUERDA (Tópicos do Assunto - 4 Colunas) -->
+                    <aside class="col-4">
+                        <div class="card stack" style="position: sticky; top: var(--space-4);">
+                            <span class="badge">Navegação da Matéria</span>
+                            <h3 class="mt-4" style="font-size: 1.1rem;">Índice de Tópicos</h3>
+                            
+                            <!-- Links com ancoragem interna para navegar até cada seção -->
+                            <nav class="site-nav" style="flex-direction: column; align-items: stretch; gap: var(--space-1);">
+                                <a href="#introducao">•  Introdução</a>
+                                <a href="#conceito-resistencia">•  O que é Resistência</a>
+                                <a href="#1a-lei-ohm">•  1ª Lei de Ohm</a>
+                                <a href="#2a-lei-ohm">•  2ª Lei de Ohm</a>
+                                <a href="#efeito-joule">•  Potência & Efeito Joule</a>
+                                <a href="#codigo-cores">•  Código de Cores</a>
+                                <a href="#exemplos-praticos">•  Exemplos Práticos</a>
+                                <a href="#recursos-visuais">•  Recursos Visuais</a>
+                                <a href="#curiosidades">•  Curiosidades</a>
+                                <a href="#resumo-caderno">•  Resumo para Caderno</a>
+                                <a href="#quiz-interativo">•  Quiz Interativo</a>
+                                <a href="#referencias">•  Referências</a>
+                            </nav>
+                        </div>
+                    </aside>
+
+                    <!-- PAINEL CENTRAL DE CONTEÚDO (8 Colunas) -->
+                    <article class="col-8 stack">
+
+                        <!-- CABEÇALHO DO TEMA -->
+                        <div class="card stack">
+                            <span class="badge">Módulo 01 — Passivos Básicos</span>
+                            <h1 class="mb-0">Resistores e a Lei de Ohm</h1>
+                            <p class="text-muted mb-0">Estudo completo sobre o controle da corrente elétrica, dimensionamento e cálculo de circuitos.</p>
+                        </div>
+
+                        <!-- 1. INTRODUÇÃO -->
+                        <section id="introducao" class="card stack">
+                            <h2>1. Introdução</h2>
+                            <p>
+                                Imagine conectar um LED sensível diretamente a uma bateria de alta voltagem: ele queimaria instantaneamente. Na eletrônica, para evitar que componentes sensíveis sejam destruídos pelo excesso de corrente elétrica, usamos os <strong>resistores</strong>.
+                            </p>
+                            <p class="mb-0">
+                                Eles funcionam como "freios" para a eletricidade, limitando a quantidade de elétrons que passa pelo circuito e garantindo que cada peça receba exatamente a energia de que precisa para funcionar com segurança.
+                            </p>
+                        </section>
+
+                        <!-- 2. CONCEITO DE RESISTÊNCIA -->
+                        <section id="conceito-resistencia" class="card stack">
+                            <h2>2. O que é Resistência Elétrica?</h2>
+                            <p class="mb-0">
+                                A resistência elétrica (R) mede a oposição física de um material ao fluxo de carga elétrica. A sua unidade de medida no Sistema Internacional é o <strong>Ohm (Ω)</strong>.
+                            </p>
+                        </section>
+
+                        <!-- 3. 1ª LEI DE OHM -->
+                        <section id="1a-lei-ohm" class="card stack">
+                            <h2>3. Primeira Lei de Ohm</h2>
+                            <p>
+                                Formulada por Georg Simon Ohm, estabelece a relação direta entre Tensão (V), Corrente (I) e Resistência (R):
+                            </p>
+
+                            <div class="alert alert-warning text-center">
+                                <h2 class="mb-0"><strong>V = I × R</strong></h2>
+                            </div>
+
+                            <div class="grid">
+                                <div class="col-4 alert alert-success text-center">
+                                    <strong>Tensão (V)</strong><br>
+                                    Medida em Volts (V)
+                                </div>
+                                <div class="col-4 alert alert-success text-center">
+                                    <strong>Corrente (I)</strong><br>
+                                    Medida em Ampères (A)
+                                </div>
+                                <div class="col-4 alert alert-success text-center">
+                                    <strong>Resistência (R)</strong><br>
+                                    Medida em Ohms (Ω)
+                                </div>
+                            </div>
+
+                            <p class="mb-0"><strong>Fórmulas derivadas:</strong> Corrente: <code>I = V / R</code> &nbsp;|&nbsp; Resistência: <code>R = V / I</code></p>
+                        </section>
+
+                        <!-- 4. 2ª LEI DE OHM -->
+                        <section id="2a-lei-ohm" class="card stack">
+                            <h2>4. Segunda Lei de Ohm</h2>
+                            <p>Explica como a geometria e o material de um condutor determinam a sua resistência:</p>
+
+                            <div class="alert alert-warning text-center">
+                                <h2 class="mb-0"><strong>R = ρ × (L / A)</strong></h2>
+                            </div>
+
+                            <ul>
+                                <li><strong>Comprimento (L):</strong> Quanto mais longo o fio, maior a resistência.</li>
+                                <li><strong>Área da Seção (A):</strong> Quanto mais grosso o fio, menor a resistência.</li>
+                                <li><strong>Resistividade (ρ):</strong> Propriedade específica do material (ex: cobre, alumínio, ouro).</li>
+                            </ul>
+                        </section>
+
+                        <!-- 5. EFEITO JOULE -->
+                        <section id="efeito-joule" class="card stack">
+                            <h2>5. Potência e Efeito Joule</h2>
+                            <p>
+                                O atrito dos elétrons ao atravessarem o resistor transforma energia elétrica em calor, fenômeno conhecido como <strong>Efeito Joule</strong>.
+                            </p>
+                            <p class="mb-0">A potência dissipada em calor (P), em Watts (W), é calculada por: <code>P = V &times; I</code> ou <code>P = I&sup2; &times; R</code>.</p>
+                        </section>
+
+                        <!-- 6. CÓDIGO DE CORES -->
+                        <section id="codigo-cores" class="card stack">
+                            <h2>6. Tabela do Código de Cores</h2>
+                            <p>Tabela utilizada para identificar os valores nominais de resistores de leitora direta:</p>
+
+                            <div class="table-wrapper">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>Cor</th>
+                                            <th>1º Dígito</th>
+                                            <th>2º Dígito</th>
+                                            <th>Multiplicador</th>
+                                            <th>Tolerância</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr><td>Preto</td><td>0</td><td>0</td><td>&times; 1</td><td>—</td></tr>
+                                        <tr><td>Castanho</td><td>1</td><td>1</td><td>&times; 10</td><td>&plusmn; 1%</td></tr>
+                                        <tr><td>Vermelho</td><td>2</td><td>2</td><td>&times; 100</td><td>&plusmn; 2%</td></tr>
+                                        <tr><td>Laranja</td><td>3</td><td>3</td><td>&times; 1.000</td><td>—</td></tr>
+                                        <tr><td>Amarelo</td><td>4</td><td>4</td><td>&times; 10.000</td><td>—</td></tr>
+                                        <tr><td>Verde</td><td>5</td><td>5</td><td>&times; 100.000</td><td>&plusmn; 0.5%</td></tr>
+                                        <tr><td>Azul</td><td>6</td><td>6</td><td>&times; 1.000.000</td><td>&plusmn; 0.25%</td></tr>
+                                        <tr><td>Violeta</td><td>7</td><td>7</td><td>&times; 10.000.000</td><td>&plusmn; 0.10%</td></tr>
+                                        <tr><td>Dourado</td><td>—</td><td>—</td><td>&times; 0.1</td><td>&plusmn; 5%</td></tr>
+                                        <tr><td>Prateado</td><td>—</td><td>—</td><td>&times; 0.01</td><td>&plusmn; 10%</td></tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+
+                        <!-- 7. EXEMPLOS PRÁTICOS -->
+                        <section id="exemplos-praticos" class="card stack">
+                            <h2>7. Exemplos Práticos</h2>
+                            <h4>Exemplo 1: Resistor Limitador para LED</h4>
+                            <p>Um LED exige 2 V e 0,02 A. Para conectá-lo a uma bateria de 9 V:</p>
+                            <ul>
+                                <li>Tensão sobre o resistor: V_R = 9 V - 2 V = 7 V</li>
+                                <li>Resistência: R = 7 V / 0,02 A = 350 Ω (Adota-se o valor comercial de 360 Ω).</li>
+                            </ul>
+
+                            <h4>Exemplo 2: Chuveiro Elétrico</h4>
+                            <p class="mb-0">
+                                No inverno, o seletor do chuveiro reduz o tamanho útil do fio resistivo. Com menor comprimento (L), a resistência (R) cai, fazendo passar mais corrente elétrica e gerando mais calor por Efeito Joule.
+                            </p>
+                        </section>
+
+                        <!-- 8. RECURSOS VISUAIS -->
+                        <section id="recursos-visuais" class="card stack">
+                            <h2>8. Recursos Visuais</h2>
+                            <p class="text-muted">Esquemas visuais e diagramas explicativos do módulo:</p>
+
+                            <div class="grid">
+                                <div class="col-4">
+                                    <figure class="stack text-center mb-0">
+                                        <img src="assets/images/imagem.png" alt="Resistores no circuito" style="border-radius: var(--radius-md); border: 1px solid var(--color-border); width: 100%;">
+                                        <figcaption class="text-muted"><small>Figura 1: Componentes Resistores</small></figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-4">
+                                    <figure class="stack text-center mb-0">
+                                        <img src="assets/images/imagem (1).png" alt="Código de Cores dos Resistores" style="border-radius: var(--radius-md); border: 1px solid var(--color-border); width: 100%;">
+                                        <figcaption class="text-muted"><small>Figura 2: Código de Cores</small></figcaption>
+                                    </figure>
+                                </div>
+                                <div class="col-4">
+                                    <figure class="stack text-center mb-0">
+                                        <img src="assets/images/imagem (2).png" alt="Diagrama da Lei de Ohm" style="border-radius: var(--radius-md); border: 1px solid var(--color-border); width: 100%;">
+                                        <figcaption class="text-muted"><small>Figura 3: Triângulo da Lei de Ohm</small></figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </section>
+
+                        <!-- 9. CURIOSIDADES -->
+                        <section id="curiosidades" class="card stack">
+                            <h2>9. Curiosidades e Aplicações</h2>
+                            <ul>
+                                <li><strong>Sensor LDR:</strong> Resistor que altera sua resistência de acordo com a luz solar, utilizado em iluminação pública.</li>
+                                <li><strong>Supercondutividade:</strong> Em temperaturas extremamente baixas, certos condutores possuem resistência zero (R = 0).</li>
+                            </ul>
+                        </section>
+
+                        <!-- 10. RESUMO PARA O CADERNO -->
+                        <section id="resumo-caderno" class="card stack">
+                            <h2>10. Resumo para o Caderno</h2>
+                            <div class="alert alert-success stack">
+                                <h4 class="mb-0">📌 Anote no seu caderno:</h4>
+                                <ul class="mb-0">
+                                    <li><strong>Resistor:</strong> Componente passivo que limita a corrente e transforma energia elétrica em calor (Efeito Joule).</li>
+                                    <li><strong>1ª Lei de Ohm:</strong> V = I × R</li>
+                                    <li><strong>2ª Lei de Ohm:</strong> R = ρ × (L / A) (Fio mais longo = mais resistência; Fio mais grosso = menos resistência).</li>
+                                </ul>
+                            </div>
+                        </section>
+
+                        <!-- 11. QUIZ INTERATIVO -->
+                        <section id="quiz-interativo" class="card stack">
+                            <h2>11. Quiz Interativo</h2>
+                            <form id="quiz-form" class="stack">
+                                <div class="form-group card">
+                                    <label class="form-label">1. Se a tensão de um circuito é 12V e a resistência é 240&Omega;, qual é a corrente?</label>
+                                    <div class="stack mt-4">
+                                        <label><input type="radio" name="q1" value="A"> A) 2.0 A</label>
+                                        <label><input type="radio" name="q1" value="B"> B) 0.05 A</label>
+                                        <label><input type="radio" name="q1" value="C"> C) 0.5 A</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group card">
+                                    <label class="form-label">2. Ao dobrar o comprimento de um fio condutor, sua resistência elétrica irá:</label>
+                                    <div class="stack mt-4">
+                                        <label><input type="radio" name="q2" value="A"> A) Reduzir pela metade</label>
+                                        <label><input type="radio" name="q2" value="B"> B) Permanecer igual</label>
+                                        <label><input type="radio" name="q2" value="C"> C) Dobrar</label>
+                                    </div>
+                                </div>
+
+                                <button type="button" id="btn-submit-quiz" class="button">Validar Respostas</button>
+                            </form>
+
+                            <!-- Caixa para exibição do resultado -->
+                            <div id="quiz-result" class="alert hidden" style="margin-top: var(--space-4);"></div>
+                        </section>
+
+                        <!-- 12. REFERÊNCIAS -->
+                        <section id="referencias" class="card stack">
+                            <h2>12. Referências</h2>
+                            <ul class="text-muted mb-0">
+                                <li>SADIKU, Matthew N. O. <em>Fundamentos de Circuitos Elétricos</em>. 2017.</li>
+                                <li>BOYLESTAD, Robert L. <em>Introdução à Análise de Circuitos</em>. 2012.</li>
+                            </ul>
+                        </section>
+
+                    </article>
+                </div>
+            </div>
+        </main>
+
+        <!-- =========================================================
+             3. BASE (FOOTER)
+             ========================================================= -->
+        <footer id="sobre-portal" class="site-footer">
+            <div class="container stack">
+                <div class="grid">
+                    <div class="col-4 stack">
+                        <h4>&lt;/&gt; Portal Educacional</h4>
+                        <p class="text-muted">Base de conhecimento colaborativa de eletroeletrônica.</p>
+                    </div>
+                    <div class="col-4 stack">
+                        <h4>Links Institucionais</h4>
+                        <nav class="site-nav" style="flex-direction: column;">
+                            <a href="#">Quem Somos</a>
+                            <a href="#">Políticas de Privacidade</a>
+                            <a href="#">Termos de Uso</a>
+                        </nav>
+                    </div>
+                    <div class="col-4 stack">
+                        <h4>Contato e Informações</h4>
+                        <p class="text-muted mb-0">
+                            E-mail: contato@eletroportal.edu.br<br>
+                            CNPJ: 00.000.000/0001-00<br>
+                            Projeto Acadêmico — 2026
+                        </p>
+                    </div>
+                </div>
+                <hr style="border: 0; border-top: 1px solid var(--color-border);">
+                <p class="text-center text-muted mb-0">&copy; 2026 Portal Educacional de Eletroeletrônica. Todos os direitos reservados.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- SCRIPT DA VALIDAÇÃO DO QUIZ -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var btnSubmit = document.getElementById('btn-submit-quiz');
+            var quizForm = document.getElementById('quiz-form');
+            var resultBox = document.getElementById('quiz-result');
+
+            if (btnSubmit) {
+                btnSubmit.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    var q1 = quizForm.querySelector('input[name="q1"]:checked');
+                    var q2 = quizForm.querySelector('input[name="q2"]:checked');
+
+                    if (!q1 || !q2) {
+                        resultBox.className = 'alert alert-warning';
+                        resultBox.innerHTML = '<strong>Atenção:</strong> Por favor, responda a todas as perguntas antes de validar.';
+                        resultBox.classList.remove('hidden');
+                        return;
+                    }
+
+                    var score = 0;
+                    if (q1.value === 'B') score++;
+                    if (q2.value === 'C') score++;
+
+                    resultBox.classList.remove('hidden');
+                    
+                    if (score === 2) {
+                        resultBox.className = 'alert alert-success';
+                        resultBox.innerHTML = '<strong>Parabéns! 🎉</strong> Você acertou todas as perguntas (2/2)!';
+                    } else if (score === 1) {
+                        resultBox.className = 'alert alert-warning';
+                        resultBox.innerHTML = '<strong>Bom trabalho! 👍</strong> Você acertou 1 de 2 perguntas. Revise a matéria acima para responder a outra.';
+                    } else {
+                        resultBox.className = 'alert alert-danger';
+                        resultBox.innerHTML = '<strong>Atenção 📚</strong> Você não acertou nenhuma pergunta. Leia a teoria acima e tente novamente!';
+                    }
+                });
+            }
+        });
+    </script>
+    <script src="js/quiz.js"></script>
+</body>
+</html>
