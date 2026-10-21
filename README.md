@@ -1,40 +1,43 @@
 # ⚡ Portal Educacional de Eletroeletrônica — Resistores e a Lei de Ohm
 
-> Projeto de software educacional colaborativo desenvolvido para a disciplina de Eletroeletrônica.
+> Módulo educacional interativo e responsivo sobre Resistores e a Lei de Ohm, desenvolvido para a disciplina de Eletroeletrônica.
 
 ---
 
 ## 📌 Sobre o Projeto
 
-O **Portal Educacional de Eletroeletrônica** é uma plataforma desenvolvida para centralizar conteúdos informativos e interativos sobre fundamentos da elétrica e eletrônica. Cada dupla ficou responsável por desenvolver um módulo específico. Este repositório contém a aplicação e a página dedicada ao tema **Resistores e a Lei de Ohm**.
+O **Portal Educacional de Eletroeletrônica** é uma plataforma colaborativa desenvolvida para reunir conceitos fundamentais de circuitos elétricos e eletrónicos. Este repositório contém a implementação completa do módulo dedicado aos **Resistores e à Lei de Ohm**, estruturado estritamente segundo o sistema de *grid* e os padrões visuais fornecidos pela disciplina.
 
 ---
 
-## 🎨 Identidade Visual (Design System)
+## 🎨 Identidade Visual e Estritura CSS
 
-O projeto utiliza a arquitetura visual e as especificações de estilo oficiais da disciplina:
+O projeto utiliza o sistema de design e regras de layout do ficheiro de estilos oficial (`css/style.css`):
 
 | Elemento Visual | Especificação / Valor |
 | :--- | :--- |
 | **Cor Primária** | `#1769aa` (Azul Tech) |
 | **Cor Secundária** | `#475569` (Cinza Escuro) |
-| **Cor de Destaque / Acento** | `#0f766e` (Verde Petróleo) |
+| **Cor de Destaque** | `#0f766e` (Verde Petróleo) |
 | **Fundo da Página** | `#f5f7fb` (Cinza Claro) |
-| **Superfície / Cartões** | `#ffffff` (Branco) |
+| **Superfície dos Cartões** | `#ffffff` (Branco) |
+| **Grelha Principal** | Layout de 12 Colunas (`.col-4` para Sidebar e `.col-8` para Conteúdo) |
 | **Tipografia Base** | `system-ui`, `-apple-system`, `sans-serif` |
-| **Logotipo** | `</> EletroPortal` |
 
 ---
 
-## 📂 Estrutura de Arquivos
+## 📂 Estrutura de Ficheiros
 
 ```text
 projeto-endrew/
 ├── css/
-│   └── style.css            # Estilos CSS oficiais do professor
+│   └── style.css            # Estilos CSS oficiais do professor (Grelha de 12 colunas)
 ├── js/
-│   └── quiz.js              # Lógica de validação do Quiz e interatividade
+│   └── quiz.js              # Lógica de validação dinâmica das respostas do Quiz
 ├── assets/
-│   └── images/              # Recursos visuais, diagramas e imagens
-├── index.html               # Portal completo (Header, Sidebar, Content e Footer)
-└── README.md                # Documentação e instruções do projeto
+│   └── images/              # Ficheiros e diagramas visuais
+│       ├── imagem.png       # Figura 1: Componentes Resistores
+│       ├── imagem (1).png   # Figura 2: Tabela do Código de Cores
+│       └── imagem (2).png   # Figura 3: Triângulo da Lei de Ohm
+├── index.html               # Página do portal (Header, Sidebar, Main e Footer)
+└── README.md                # Documentação do repositório
